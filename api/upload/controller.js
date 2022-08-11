@@ -17,7 +17,7 @@ async function uploadSingleHandler(req, res) {
   try {
     const { file } = req;
     const result = await uploadImage(file.path);
-    console.log(result.url)
+    console.log("result",result.url)
     // res.status(200).json(result.url);
     res.status(200).json({ url:result.url});
     

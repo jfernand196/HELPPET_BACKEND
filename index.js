@@ -14,7 +14,8 @@ const upload = require('./api/upload');
 const PORT = process.env.PORT || 3001;
 const bodyParser = require('body-parser');
 // connect to mongodb
-mongoose.connect('mongodb://0.0.0.0:27017/HELPPET', { useNewUrlParser: true });
+// mongoose.connect('mongodb://0.0.0.0:27017/HELPPET', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://juanbuitrago:123@clusterdemo.stkfluj.mongodb.net/HELPPET?retryWrites=true&w=majority', { useNewUrlParser: true });
 // middleware
 app.use(cors());
 app.use(express.json());
